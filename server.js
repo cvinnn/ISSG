@@ -15,7 +15,7 @@ io.on("connection", (socket) => {
      let { username , message} = data;
      console.log(`Receiving Message from ${username}: ${message}`);
      //message = message + "(modified by server)";
-     io.emit("message", {data});
+     io.emit("message", data);
     });
 });
 
